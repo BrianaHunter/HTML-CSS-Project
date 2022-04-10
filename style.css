@@ -1,103 +1,93 @@
-
-body {
-    font-family: Arial, sans-serif;
+body{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600px;
 }
-header {
+header{
     background-color: #70a48b;
     padding: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
-.nav-list{
-    font-family: Arial, sans-serif;
-    list-style-type: none;
-    display: flex;
-    padding: 2em .5em 2em 2em;
+footer{
+    background-color: #70a48b;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    min-width: 768px;
+}
+.navbar{
+    font-family: 'Work Sans', sans-serif;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2em 2em 2em 2em;
     border: 2px solid white;
-    border-radius: 5px;
+    border-radius: 8px;
 }
-.nav-list li{
-    display: inline;
-    padding: 0px 20px 0px 0px;
+#donation{
+    background-color: #1f211c;
+    border-radius: 8px;
 }
-li a{
-    color: white;
-    text-decoration: none;
-}
-.test{
-    padding: .5em;
-    border: 2px solid black;
-    background-color: black;
-    border-radius: 5px;
-}
-.donations {
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
+li{
     align-items: center;
+    color: white;
+    display: inline;
+    padding: 15px;
 }
-.cities p {
+.friends h2{
+    padding-top: 80px;
+    
+}
+.cities h4{
     color: white;
     border: 2px solid black;
     border-radius: 10px;
     background-color: #70a48b;
-    padding: 1.5em;
-    margin: 2px;
-}
-.parent-container-flex-start{
-    font-weight: bold; 
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    padding: 1.25em;
+    justify-content: space-between;
 }
 p{
-    padding: 15px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.pet{
+    padding: 10px;
+    align-content: center;
+    border-radius: 25px;
+    border: 1px solid white;
+    width: 45%;
+}
+.info{
+    margin: 25px 25px 100px 25px;
 }
 
-.image-grid {
-    display: flex;
-    flex-wrap: wrap;
-}
-.img {
-    width: 45%;
-    padding: 10px;
-}
-footer {
-    background-color: #70a48b;
-    padding: 10px;
-}
-@media (min-width: 768px) {
-    body {
-        font-family: Arial, sans-serif;
-    }
-    header {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-    }
-    .nav-list{
-        float: right;
-        position: relative; 
-    }
-    .donations {
+@media screen and (min-width: 768px) {
+    
+    header{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: flex-start;
     }
-    .locations, .friends {
-        width: 45%;
-    }
-    /* .mobile-first {
+    .info{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: flex-start;
-        
-    } */
-    .img {
+        width: 100%;
+    }
+    .pet{
+        width: 25%;
+    }
+    .friends h2 {
+        padding-top: 0px;
+    }
+    .friends{
+        width: 60%;
+    }
+    .locations{
         width: 30%;
-        padding: 10px;
+        padding-left: 30px;
     }
+    footer{
+        min-width: 1500px;
+    }
+
 }
